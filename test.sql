@@ -65,5 +65,10 @@ insert into `khoandonggop` (`id`, `tenkhoanthu`, `idloaidonggop`, `sotientoithie
 (8, 'Đổ rác', 1, 50000, 'Tháng 11'),
 (9, 'Đổ rác', 1, 50000, 'Tháng 12');
 
+insert into `thutien` (`id`, `idkhoandonggop`, `idnguoinop`, `sotien`, `ghichu`) values
+(1, 1, 3, 100000, 'nộp tiền'),
+(2, 4, 3, 200000, 'nộp tiền'),
+(3, 9, 14, 500000, 'nộp');
+
 insert into `user` (`id`, `username`, `password`) values
 (1, 'admin', 'admin');
