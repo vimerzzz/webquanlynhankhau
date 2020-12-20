@@ -1,20 +1,20 @@
 insert into `hokhau` (`id`, `idchuho`, `diachi`) values
-('HK1', 'NK1', 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội'),
-('HK2', 'NK3', 'Phường Phúc Đồng, quận Long Biên, thành phố Hà Nội');
+(1, 1, 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội'),
+(2, 3, 'Phường Phúc Đồng, quận Long Biên, thành phố Hà Nội');
 
 insert into `nhankhau` (`id`, `hoten`, `namsinh`, `gioitinh`, `noisinh`, `nguyenquan`, `dantoc`, `tongiao`, `quoctich`, `thuongtru`) values
-('NK1', 'Phạm Thành Long', '2000-11-15', 'Nam', 'Xã Quang Lịch, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội'),
-('NK2', 'Phạm Đức Hòa', '2000-09-21', 'Nam', 'Xã Quang Hưng, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội'),
-('NK3', 'Bùi Minh Tâm', '1997-05-02', 'Nam', 'Xã Bình Minh, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Phúc Đồng, quận Long Biên, thành phố Hà Nội'),
-('NK4', 'Bùi Quang Thái', '2000-11-16', 'Nam', 'Xã Bình Minh, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Phúc Đồng, quận Long Biên, thành phố Hà Nội'),
-('NK5', 'Nguyễn Thanh Tú', '2000-08-13', 'Nam', 'Xã Tán Thuật, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội');
+(1, 'Phạm Thành Long', '2000-11-15', 'Nam', 'Xã Quang Lịch, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội'),
+(2, 'Phạm Đức Hòa', '2000-09-21', 'Nam', 'Xã Quang Hưng, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội'),
+(3, 'Bùi Minh Tâm', '1997-05-02', 'Nam', 'Xã Bình Minh, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Phúc Đồng, quận Long Biên, thành phố Hà Nội'),
+(4, 'Bùi Quang Thái', '2000-11-16', 'Nam', 'Xã Bình Minh, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Phúc Đồng, quận Long Biên, thành phố Hà Nội'),
+(5, 'Nguyễn Thanh Tú', '2000-08-13', 'Nam', 'Xã Tán Thuật, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'Phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội');
 
 insert into `thanhviencuaho` (`id`, `idnhankhau`, `idhokhau`, `quanhevoichuho`) values
-(1, 'NK1', 'HK1', 'chủ hộ'),
-(2, 'NK2', 'HK1', 'cháu'),
-(3, 'NK3', 'HK2', 'chủ hộ'),
-(4, 'NK4', 'HK2', 'em'),
-(5, 'NK5', 'HK1', 'anh');
+(1, 1, 1, 'chủ hộ'),
+(2, 2, 1, 'cháu'),
+(3, 3, 2, 'chủ hộ'),
+(4, 4, 2, 'em'),
+(5, 5, 1, 'anh');
 
 insert into `user` (`id`, `username`, `password`) values
 (1, 'admin', 'admin');
