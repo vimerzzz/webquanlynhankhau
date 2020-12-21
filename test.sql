@@ -1,17 +1,19 @@
+use quan_ly_khoan_thu;
+
 alter table `hokhau`
 drop column `ngaydangky`;
 
 alter table `hokhau`
-add column `ngaydangky` date default current_timestamp;
+add column `ngaydangky` datetime default current_timestamp;
 
 alter table `nhankhau`
 drop column `ngaytao`;
 
 alter table `nhankhau`
-add column `ngaytao` date default current_timestamp;
+add column `ngaytao` datetime default current_timestamp;
 
 alter table `thutien`
-add column `ngaynop` date default current_timestamp;
+add column `ngaynop` datetime default current_timestamp;
 
 insert into `nhankhau` (`id`, `hoten`, `namsinh`, `gioitinh`, `nguyenquan`, `dantoc`, `tongiao`, `quoctich`, `thuongtru`) values
 (1, 'Phạm Thành Huấn', '1960-03-14', 'Nam', 'Xã Quang Lịch, huyện Kiến Xương, tỉnh Thái Bình', 'Kinh', 'Không', 'Việt Nam', 'số 1, phường Giáp Bát, quận Hoàng Mai, thành phố Hà Nội'),
@@ -65,10 +67,10 @@ insert into `khoandonggop` (`id`, `tenkhoanthu`, `idloaidonggop`, `sotientoithie
 (8, 'Đổ rác', 1, 50000, 'Tháng 11'),
 (9, 'Đổ rác', 1, 50000, 'Tháng 12');
 
-insert into `thutien` (`id`, `idkhoandonggop`, `idnguoinop`, `sotien`, `ghichu`) values
-(1, 1, 3, 100000, 'nộp tiền'),
-(2, 4, 3, 200000, 'nộp tiền'),
-(3, 9, 14, 500000, 'nộp');
+insert into `thutien` (`id`, `idkhoandonggop`, `idhokhau`, `idnguoinop`, `sotien`, `ghichu`) values
+(1, 1, 1, 3, 100000, 'nộp tiền'),
+(2, 4, 1, 3, 200000, 'nộp tiền'),
+(3, 9, 3, 14, 500000, 'nộp');
 
 insert into `user` (`id`, `username`, `password`) values
 (1, 'admin', 'admin');
